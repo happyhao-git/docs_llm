@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#6d4aff" />
+    <meta name="description" content="LinkAPI 接入文档、安装教程与配置说明。" />
+    <link rel="icon" href="/favicon.ico?v=4" sizes="16x16 32x32 48x48" />
+    <link rel="icon" href="/favicon-32.png?v=4" type="image/png" sizes="32x32" />
+    <link rel="icon" href="/favicon-16.png?v=4" type="image/png" sizes="16x16" />
+    <link rel="icon" href="/favicon.svg?v=4" type="image/svg+xml" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=4" sizes="180x180" />
+    <link rel="manifest" href="/site.webmanifest?v=4" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="LinkAPI 开发者文档" />
+    <meta property="og:description" content="LinkAPI 接入文档、安装教程与配置说明。" />
+    <title>LinkAPI 开发者文档</title>
+    <style>
+      /* Available with the HTML, even when application scripts are slow or fail. */
+      #app-loading{position:fixed;inset:0;z-index:1000;background:#f7f8fb;color:#171a22;font:14px -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif}
+      #app-loading header{height:64px;display:flex;align-items:center;gap:28px;padding:0 28px;background:#fff;border-bottom:1px solid #e5e7eb}
+      #app-loading a{color:inherit;text-decoration:none}#app-loading .boot-brand{display:flex;align-items:center;gap:10px;font-size:22px;font-weight:700;letter-spacing:-.5px}#app-loading .boot-brand img{width:32px;height:32px}#app-loading .boot-wordmark>span{color:#6d4aff}
+      #app-loading nav{display:flex;gap:24px;font-size:12px}#app-loading .boot-body{margin:52px auto;max-width:1000px;padding:0 24px}
+      #app-loading-status{color:#6e7787;margin:0 0 24px}#app-loading .boot-lines{border:1px solid #e5e7eb;border-radius:12px;background:#fff;overflow:hidden}
+      #app-loading .boot-lines i{display:block;height:51px;border-bottom:1px solid #edf0f5}#app-loading .boot-lines i:last-child{border:0}
+      #app-loading .boot-lines i:before{content:"";display:block;width:30%;height:9px;margin:21px 20px;border-radius:4px;background:#eef0f5}
+      #app-loading-retry{display:inline-block;margin-top:22px;color:#6d4aff!important;font-size:13px}#app-loading[data-failed] .boot-lines{display:none}
+      :root[data-theme=dark] #app-loading{background:#111318;color:#f1f2f5}:root[data-theme=dark] #app-loading header,:root[data-theme=dark] #app-loading .boot-lines{background:#181b22;border-color:#2d323d}:root[data-theme=dark] #app-loading .boot-lines i{border-color:#2d323d}:root[data-theme=dark] #app-loading .boot-lines i:before{background:#2d323d}
+      @media(max-width:600px){#app-loading header{padding:0 18px;gap:24px}#app-loading .boot-body{margin:32px auto;padding:0 16px}#app-loading nav{gap:18px}}
+    </style>
+  </head>
+  <body>
+    <div id="app-loading">
+      <header><a class="boot-brand" href="/"><img src="/favicon.svg?v=4" alt="" width="32" height="32" /><span class="boot-wordmark">Link<span>API</span></span></a><nav aria-label="站点导航"><a href="/">使用文档</a><a href="/models?billing=subscription&amp;platform=all&amp;group=67">模型广场</a></nav></header>
+      <div class="boot-body"><p id="app-loading-status" role="status">正在加载…</p><div class="boot-lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div><a id="app-loading-retry" href="">重新加载</a><noscript><p>请启用 JavaScript 后访问。</p></noscript></div>
+    </div>
+    <div id="app"></div>
+    <script type="module" src="/src/bootstrap.ts"></script>
+  </body>
+</html>

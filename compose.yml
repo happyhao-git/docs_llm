@@ -1,0 +1,24 @@
+services:
+  docs-llm:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: docs-llm
+    restart: unless-stopped
+    network_mode: host
+    user: "${DOCS_UID:-1000}:${DOCS_GID:-1000}"
+    env_file:
+      - .env
+    environment:
+      SUB2API_DEPLOY_ENV_PATH: /run/linkapi/sub2api.env
+      SUB2API_PRICING_PATH: /run/linkapi/sub2api-data/model_pricing.json
+    volumes:
+      - ./data/uploads:/app/data/uploads
+      - ${SUB2API_DEPLOY_ENV_FILE:-/opt/llm/sub2api-deploy/.env}:/run/linkapi/sub2api.env:ro
+      - ${SUB2API_DATA_DIR:-/opt/llm/sub2api-deploy/data}:/run/linkapi/sub2api-data:ro
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-T", "5", "-O", "/dev/null", "http://127.0.0.1:8090/healthz"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s

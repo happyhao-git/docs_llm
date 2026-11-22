@@ -1,0 +1,33 @@
+.site-header .brand{flex-shrink:0}.site-header .site-nav{display:flex;align-items:center;gap:7px;margin-left:26px;height:100%}.site-nav a{display:flex;align-items:center;height:100%;padding:0 13px;position:relative;font-size:12px;color:var(--text-secondary);text-decoration:none;white-space:nowrap}.site-nav a.selected{color:var(--text);font-weight:600}.site-nav a.selected::after{content:'';height:2px;background:var(--accent);border-radius:2px;position:absolute;bottom:0;left:13px;right:13px}.site-header .header-actions{margin-left:auto}
+@media(max-width:1000px){.site-header .site-nav{margin-left:13px;gap:2px}.site-header .search-trigger{width:34px;min-width:34px;padding:0;justify-content:center}.site-header .search-trigger span,.site-header .search-trigger kbd{display:none}}
+@media(max-width:600px){.site-header{gap:9px;padding:0 14px}.site-header .brand-mark{width:27px;height:27px}.site-header .brand-wordmark{font-size:17px}.site-header .site-nav{margin-left:5px;gap:0}.site-nav a{font-size:11px;padding:0 8px}.site-nav a.selected::after{left:8px;right:8px}.site-header .console-link{display:none}.site-header .header-actions{gap:1px}.site-header .icon-button{width:29px;height:32px}.site-header .search-trigger{width:29px;min-width:29px}.site-header .site-theme{width:26px}}
+@media(max-width:370px){.site-header .brand-wordmark{display:none}.site-header .site-nav{margin-left:0}}
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+
+/* A shared optical weight for navigation and controls; provider marks stay intact. */
+.lucide { stroke-width: 1.75; }
+.content-icon { flex-shrink: 0; vertical-align: middle; }
+.brand-mark, .footer-brand img {
+  border-radius: 28.125%;
+  box-shadow: 0 2px 4px rgb(78 41 173 / 10%);
+}
+.guide-icon {
+  flex-shrink: 0;
+  border: 1px solid color-mix(in srgb, var(--accent) 12%, var(--surface));
+  border-radius: 12px;
+  background: linear-gradient(145deg,
+    color-mix(in srgb, var(--accent) 4%, var(--surface)),
+    color-mix(in srgb, var(--accent) 11%, var(--surface)));
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 45%);
+}
+.sidebar-link > .content-icon { opacity: 1; color: var(--text-muted); }
+.sidebar-link:is(:hover, .active) > .content-icon,
+.sidebar-intro.active .content-icon,
+.search-result.selected > .content-icon { color: var(--accent-strong); }
+:root[data-theme="dark"] .guide-icon {
+  border-color: color-mix(in srgb, var(--accent) 23%, var(--surface));
+  background: linear-gradient(145deg,
+    color-mix(in srgb, var(--accent) 13%, var(--surface)),
+    color-mix(in srgb, var(--accent) 20%, var(--surface)));
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 5%);
+}

@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+data/uploads/*
+!data/uploads/.gitkeep
+test-results/
+playwright-report/
+*.log
+.DS_Store
+

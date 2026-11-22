@@ -1,0 +1,147 @@
+{
+  "groups": [
+    {
+      "id": 1,
+      "name": "Codex 教程",
+      "anchor": "codex",
+      "sortOrder": 0,
+      "isVisible": true
+    },
+    {
+      "id": 8,
+      "name": "Claude 教程",
+      "anchor": "claude",
+      "sortOrder": 1,
+      "isVisible": true
+    },
+    {
+      "id": 11,
+      "name": "第三方Agent教程",
+      "anchor": "其他第三方agent接入",
+      "sortOrder": 2,
+      "isVisible": true
+    }
+  ],
+  "documents": [
+    {
+      "id": 2,
+      "slug": "windows-install-codex",
+      "group": "codex",
+      "file": "windows-install-codex.md",
+      "title": "Windows 安装与配置 Codex",
+      "navLabel": "Windows 安装与配置教程",
+      "sortOrder": 0,
+      "isVisible": true
+    },
+    {
+      "id": 1,
+      "slug": "mac-install-codex",
+      "group": "codex",
+      "file": "mac-install-codex.md",
+      "title": "Mac / Linux 安装与配置 Codex",
+      "navLabel": "Mac / Linux 安装与配置教程",
+      "sortOrder": 1,
+      "isVisible": true
+    },
+    {
+      "id": 6,
+      "slug": "codex-image-generation",
+      "group": "codex",
+      "file": "codex-image-generation.md",
+      "title": "Codex 图片生成与编辑",
+      "navLabel": "图片生成与编辑教程",
+      "sortOrder": 2,
+      "isVisible": true
+    },
+    {
+      "id": 5,
+      "slug": "windows-install-claude",
+      "group": "claude",
+      "file": "windows-install-claude.md",
+      "title": "Windows 安装与配置 Claude",
+      "navLabel": "Windows 安装与配置教程",
+      "sortOrder": 0,
+      "isVisible": true
+    },
+    {
+      "id": 4,
+      "slug": "mac-install-claude",
+      "group": "claude",
+      "file": "mac-install-claude.md",
+      "title": "Mac 安装与配置 Claude",
+      "navLabel": "Mac 安装与配置教程",
+      "sortOrder": 1,
+      "isVisible": true
+    },
+    {
+      "id": 8,
+      "slug": "一卡通接入claude-code教程",
+      "group": "claude",
+      "file": "一卡通接入claude-code教程.md",
+      "title": "一卡通接入Claude Code教程",
+      "navLabel": "一卡通接入Claude Code教程",
+      "sortOrder": 2,
+      "isVisible": true
+    },
+    {
+      "id": 14,
+      "slug": "opencode",
+      "group": "其他第三方agent接入",
+      "file": "opencode.md",
+      "title": "OpenCode",
+      "navLabel": "OpenCode",
+      "sortOrder": 0,
+      "isVisible": true
+    },
+    {
+      "id": 11,
+      "slug": "workbuddy",
+      "group": "其他第三方agent接入",
+      "file": "workbuddy.md",
+      "title": "WorkBuddy",
+      "navLabel": "WorkBuddy",
+      "sortOrder": 1,
+      "isVisible": true
+    },
+    {
+      "id": 12,
+      "slug": "deepseek-harness",
+      "group": "其他第三方agent接入",
+      "file": "deepseek-harness.md",
+      "title": "DeepSeek Harness",
+      "navLabel": "DeepSeek Harness",
+      "sortOrder": 2,
+      "isVisible": true
+    },
+    {
+      "id": 13,
+      "slug": "trae",
+      "group": "其他第三方agent接入",
+      "file": "trae.md",
+      "title": "TRAE",
+      "navLabel": "TRAE",
+      "sortOrder": 3,
+      "isVisible": true
+    },
+    {
+      "id": 15,
+      "slug": "qoder",
+      "group": "其他第三方agent接入",
+      "file": "qoder.md",
+      "title": "Qoder",
+      "navLabel": "Qoder",
+      "sortOrder": 4,
+      "isVisible": true
+    },
+    {
+      "id": 16,
+      "slug": "zcode",
+      "group": "其他第三方agent接入",
+      "file": "zcode.md",
+      "title": "ZCode",
+      "navLabel": "ZCode",
+      "sortOrder": 5,
+      "isVisible": true
+    }
+  ]
+}
