@@ -1,7 +1,7 @@
 import type { CatalogRefreshResult, PublicCatalog } from './types'
 import { MODEL_SYNC_INTERVAL_MS } from '../../../server/models/policy'
 
-export const CATALOG_CACHE_KEY = 'linkapi:model-catalog:v10'
+export const CATALOG_CACHE_KEY = 'ailink:model-catalog:v11'
 export const CATALOG_FRESH_TTL = MODEL_SYNC_INTERVAL_MS
 export const CATALOG_CACHE_TTL = 6 * CATALOG_FRESH_TTL
 export const CATALOG_REQUEST_TIMEOUT = 12_000

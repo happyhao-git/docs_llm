@@ -2,7 +2,7 @@ import { ref } from 'vue'
 import type { SiteSettings } from '@/types'
 const settings = ref<SiteSettings | null>(null)
 const theme = ref<'light' | 'dark'>('light')
-export const SITE_CACHE_KEY = 'linkapi:site-settings:v1'
+export const SITE_CACHE_KEY = 'ailink:site-settings:v2'
 export const SITE_CACHE_TTL = 60 * 60_000
 let loadedAt = 0
 let pending: Promise<void> | null = null
