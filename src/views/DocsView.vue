@@ -159,9 +159,9 @@ async function loadArticle(initial?: InitialArticle) {
   }
 }
 function setPageMeta() {
-  const title = isHome.value ? 'LinkAPI 开发者文档' : documentDetail.value?.title ?? (notFound.value ? '未找到教程' : '文档加载')
-  document.title = isHome.value ? title : `${title} | LinkAPI 文档`
-  const description = documentDetail.value?.summary || 'LinkAPI 接入文档、安装教程与配置说明。'
+  const title = isHome.value ? 'AiLink 开发者文档' : documentDetail.value?.title ?? (notFound.value ? '未找到教程' : '文档加载')
+  document.title = isHome.value ? title : `${title} | AiLink 文档`
+  const description = documentDetail.value?.summary || 'AiLink 接入文档、安装教程与配置说明。'
   document.querySelector('meta[name="description"]')?.setAttribute('content', description)
   document.querySelector('meta[property="og:title"]')?.setAttribute('content', document.title)
   document.querySelector('meta[property="og:description"]')?.setAttribute('content', description)
@@ -292,7 +292,7 @@ onBeforeUnmount(() => {
       <div v-if="sidebarOpen" class="sidebar-backdrop" @click="sidebarOpen = false" />
       <aside ref="sidebarRoot" class="docs-sidebar" :class="{ open: sidebarOpen }" :role="sidebarOpen ? 'dialog' : undefined" :aria-modal="sidebarOpen ? true : undefined" aria-label="文档导航">
         <div class="mobile-sidebar-head"><span>文档导航</span><button class="icon-button" type="button" aria-label="关闭导航" @click="sidebarOpen = false"><X :size="19" /></button></div>
-        <RouterLink to="/" class="sidebar-intro" :class="{ active: isHome }" aria-label="LinkAPI 开发者文档首页" @click="closeNavigation"><strong><ContentIcon kind="book" :size="18" />LinkAPI 开发者文档</strong></RouterLink>
+        <RouterLink to="/" class="sidebar-intro" :class="{ active: isHome }" aria-label="AiLink 开发者文档首页" @click="closeNavigation"><strong><ContentIcon kind="book" :size="18" />AiLink 开发者文档</strong></RouterLink>
         <nav v-if="site?.groups.length" aria-label="教程分类">
           <div v-for="group in site.groups" :key="group.id" class="sidebar-group">
             <button :id="`sidebar-group-toggle-${group.id}`" class="sidebar-group-label" :class="{ expanded: expandedSidebarGroups.has(group.id) }" type="button" :aria-expanded="expandedSidebarGroups.has(group.id)" :aria-controls="`sidebar-group-documents-${group.id}`" @click="toggleSidebarGroup(group.id)">
@@ -326,7 +326,7 @@ onBeforeUnmount(() => {
           </section>
           <nav v-if="previousDocument || nextDocument" class="document-pagination" aria-label="相邻文档"><RouterLink v-if="previousDocument" :to="{ name: 'docs-document', params: { slug: previousDocument.slug } }" class="pagination-card" @pointerenter="prefetchDocument(previousDocument.slug)" @focus="prefetchDocument(previousDocument.slug)" @touchstart.passive="prefetchDocument(previousDocument.slug)"><ArrowLeft :size="18" /><span><small>上一篇</small><strong>{{ previousDocument.navLabel }}</strong></span></RouterLink><RouterLink v-if="nextDocument" :to="{ name: 'docs-document', params: { slug: nextDocument.slug } }" class="pagination-card next" @pointerenter="prefetchDocument(nextDocument.slug)" @focus="prefetchDocument(nextDocument.slug)" @touchstart.passive="prefetchDocument(nextDocument.slug)"><span><small>下一篇</small><strong>{{ nextDocument.navLabel }}</strong></span><ArrowRight :size="18" /></RouterLink></nav>
         </template>
-        <footer v-if="!loading && !articleLoading" class="docs-footer"><span class="footer-brand"><img :src="BRAND_ICON_URL" alt="" width="20" height="20" />LinkAPI 开发者文档</span></footer>
+        <footer v-if="!loading && !articleLoading" class="docs-footer"><span class="footer-brand"><img :src="BRAND_ICON_URL" alt="" width="20" height="20" />AiLink 开发者文档</span></footer>
       </main>
       <aside v-if="!isHome && outline.length && !articleLoading" class="page-outline"><div class="outline-title"><List :size="14" />本页内容</div><a v-for="item in outline" :key="item.id" :href="`#${item.id}`" class="outline-link" :class="{ nested: item.level === 3, active: activeHeading === item.id }" :aria-current="activeHeading === item.id ? 'location' : undefined">{{ item.text }}</a><a class="outline-top" href="#main-content"><ArrowUp :size="14" />回到顶部</a></aside>
     </div>

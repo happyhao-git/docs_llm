@@ -6,7 +6,7 @@ import { priceCatalog } from '../../tests/fixtures/price-export.js'
 const catalog = priceCatalog()
 const request = { catalogHash: exportCatalogHash(catalog), billing: 'balance' as const, rows: [{ platform: 'openai', modelId: 'gpt-test', groupId: '26' }], showRelease: false, showPlatform: true }
 const data = { billing: 'balance' as const, updatedAt: catalog.updatedAt, pricingUpdatedAt: catalog.pricingUpdatedAt,
-  generatedAt: '2026-11-05T01:00:00.000Z', rows: [], showRelease: false, showPlatform: true, origin: 'https://docs.gs88.shop' }
+  generatedAt: '2026-11-05T01:00:00.000Z', rows: [], showRelease: false, showPlatform: true, origin: 'https://docs.ailink1.com' }
 
 describe('PDF reuse', () => {
   it('coalesces simultaneous exports and expires saved bytes', async () => {

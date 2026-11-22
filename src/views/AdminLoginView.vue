@@ -30,7 +30,7 @@ async function login() {
   <main class="login-page">
     <a class="back-link" href="/"><ArrowLeft :size="17" /> 返回文档</a>
     <section class="login-panel">
-      <div class="login-brand"><img class="brand-mark" :src="BRAND_ICON_URL" alt="" width="36" height="36" /><span>LinkAPI 文档中心</span></div>
+      <div class="login-brand"><img class="brand-mark" :src="BRAND_ICON_URL" alt="" width="36" height="36" /><span>AiLink 文档中心</span></div>
       <div class="login-heading">
         <div class="login-icon"><LockKeyhole :size="23" /></div>
         <h1>管理后台</h1>

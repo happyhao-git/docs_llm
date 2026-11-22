@@ -1,7 +1,7 @@
 // @vitest-environment jsdom
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 
-const value = { siteName: 'LinkAPI', subtitle: '', consoleUrl: 'https://ai.gs88.shop', accentColor: '#6d4aff' }
+const value = { siteName: 'AiLink', subtitle: '', consoleUrl: 'https://ai.ailink1.com', accentColor: '#6d4aff' }
 let values: Map<string, string>
 beforeEach(() => {
   vi.resetModules()

@@ -117,7 +117,7 @@
       "/uploads/2026/11/e8f2473b-fafb-472e-9af0-099a2e7709bb.png"
     ]
   },
-  "codexToml": "model_provider = \"OpenAI\"\nmodel = \"gpt-6.1-sol\"\nreview_model = \"gpt-6.1-sol\"\nmodel_reasoning_effort = \"xhigh\"\ndisable_response_storage = true\nnetwork_access = \"enabled\"\nwindows_wsl_setup_acknowledged = true\nmodel_context_window = 400000\nmodel_auto_compact_token_limit = 260000\nconversationDetailMode = \"STEPS_COMMANDS\"\n\n[model_providers.OpenAI]\nname = \"LinkAPI\"\nbase_url = \"https://ai.ailink1.com\"\nwire_api = \"responses\"\nrequires_openai_auth = true\n\n[features]\ngoals = true",
+  "codexToml": "model_provider = \"OpenAI\"\nmodel = \"gpt-6.1-sol\"\nreview_model = \"gpt-6.1-sol\"\nmodel_reasoning_effort = \"xhigh\"\ndisable_response_storage = true\nnetwork_access = \"enabled\"\nwindows_wsl_setup_acknowledged = true\nmodel_context_window = 400000\nmodel_auto_compact_token_limit = 260000\nconversationDetailMode = \"STEPS_COMMANDS\"\n\n[model_providers.OpenAI]\nname = \"AiLink\"\nbase_url = \"https://ai.ailink1.com\"\nwire_api = \"responses\"\nrequires_openai_auth = true\n\n[features]\ngoals = true",
   "claudeSettings": {
     "env": {
       "ANTHROPIC_BASE_URL": "https://ai.ailink1.com",

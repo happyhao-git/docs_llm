@@ -47,7 +47,7 @@ async function editorFixture(page: Page) {
     if (url.pathname.startsWith('/uploads/')) return route.fulfill({ contentType: 'image/png', body: png })
     if (!url.pathname.startsWith('/api/')) return route.continue()
     if (url.pathname === '/api/admin/content') return json(route, {
-      settings: { siteName: 'LinkAPI', subtitle: '', consoleUrl: 'https://example.invalid', accentColor: '#6d4aff' },
+      settings: { siteName: 'AiLink', subtitle: '', consoleUrl: 'https://example.invalid', accentColor: '#6d4aff' },
       activePublicationId: 1, publicationStatus,
       groups: [{ id: 1, name: '教程', anchor: 'guides', isVisible: true, sortOrder: 0, documents }]
     })

@@ -28,7 +28,7 @@ export async function fetchPricePdf(catalog: PublicCatalog, billing: BillingMode
   }
   if (!response.headers.get('content-type')?.startsWith('application/pdf')) throw new Error('导出失败，请重试。')
   const encoded = response.headers.get('content-disposition')?.match(/filename\*=UTF-8''([^;]+)/i)?.[1]
-  let filename = `LinkAPI-价格表-${billing === 'subscription' ? '订阅' : '余额'}.pdf`
+  let filename = `AiLink-价格表-${billing === 'subscription' ? '订阅' : '余额'}.pdf`
   if (encoded) try { filename = decodeURIComponent(encoded) } catch { /* Keep a usable fallback name. */ }
   const result = { blob: await response.blob(), filename }, serverKey = response.headers.get('x-price-pdf-key')
   if (serverKey && /^[a-f0-9]{64}$/.test(serverKey)) downloads.save(key, result, serverKey)

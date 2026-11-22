@@ -44,7 +44,7 @@ describe('directory vendor and pool selections', () => {
     expect(chosen.groups.map(g => g.id)).toEqual(['67'])
     expect(chosen.model.items[0].final).toBe('0.21')
     const pdf = buildPriceExport(c, { billing: 'subscription', catalogHash: exportCatalogHash(c), showRelease: false,
-      rows: [{ platform: 'grok', modelId: 'grok-test', groupId: chosen.group!.id, poolKey: 'grok-only' }] }, 'https://docs.gs88.shop')
+      rows: [{ platform: 'grok', modelId: 'grok-test', groupId: chosen.group!.id, poolKey: 'grok-only' }] }, 'https://docs.ailink1.com')
     expect(pdf.rows[0].model.items[0].final).toBe(chosen.model.items[0].final)
     expect(pdf.rows[0].group?.name).toContain('Grok【企业】')
     expect(c.groups.find(g => g.id === '65')?.models[0].items[0].final).toBe('0.02')

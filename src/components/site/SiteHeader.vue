@@ -19,7 +19,7 @@ onMounted(() => { initializeTheme(); void loadSettings().catch(() => undefined) 
 <template>
   <header class="docs-header site-header">
     <slot name="leading" />
-    <RouterLink class="brand" to="/" aria-label="文档首页"><img class="brand-mark" :src="BRAND_ICON_URL" alt="" width="34" height="34" /><span class="brand-wordmark">Link<span>API</span></span></RouterLink>
+    <RouterLink class="brand" to="/" aria-label="文档首页"><img class="brand-mark" :src="BRAND_ICON_URL" alt="" width="34" height="34" /><span class="brand-wordmark">Ai<span>Link</span></span></RouterLink>
     <nav class="site-nav" aria-label="站点导航">
       <RouterLink to="/" :class="{ selected: active === 'docs' }" :aria-current="active === 'docs' ? 'page' : undefined">使用文档</RouterLink>
       <RouterLink :to="MODEL_PLAZA_ENTRY" :class="{ selected: active === 'models' }" :aria-current="active === 'models' ? 'page' : undefined" @pointerenter="prefetchModels" @focus="prefetchModels">模型广场</RouterLink>

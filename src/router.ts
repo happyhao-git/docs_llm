@@ -26,8 +26,8 @@ router.beforeEach(to => {
 })
 
 router.afterEach((to) => {
-  if (to.name === 'models') document.title = '模型广场 · 模型与价格 | LinkAPI'
-  if (to.name === 'admin-models') document.title = '模型广场管理 | LinkAPI'
-  if (to.name === 'admin') document.title = '文档管理 | LinkAPI'
-  if (to.name === 'admin-login') document.title = '管理员登录 | LinkAPI'
+  if (to.name === 'models') document.title = '模型广场 · 模型与价格 | AiLink'
+  if (to.name === 'admin-models') document.title = '模型广场管理 | AiLink'
+  if (to.name === 'admin') document.title = '文档管理 | AiLink'
+  if (to.name === 'admin-login') document.title = '管理员登录 | AiLink'
 })

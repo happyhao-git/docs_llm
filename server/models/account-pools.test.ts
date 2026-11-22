@@ -57,15 +57,15 @@ describe('subscription account pools', () => {
     const { catalog } = fixture(), pools = availableAccountPools(catalog, 'openai', '12')
     const request = { catalogHash: exportCatalogHash(catalog), billing: 'subscription' as const, showRelease: false,
       rows: [{ platform: 'openai', modelId: 'gpt-example', groupId: '12', poolKey: pools[1].key }] }
-    const data = buildPriceExport(catalog, request, 'https://docs.gs88.shop')
+    const data = buildPriceExport(catalog, request, 'https://docs.ailink1.com')
     expect(data.rows[0].group?.name).toContain('ChatGPT-Pro【企业稳定】')
     expect(data.rows[0].model.items[0].coefficient).toBe('0.16')
     request.rows[0].modelId = 'gpt-official-only'
-    expect(() => buildPriceExport(catalog, request, 'https://docs.gs88.shop')).toThrow('价格表已更新')
+    expect(() => buildPriceExport(catalog, request, 'https://docs.ailink1.com')).toThrow('价格表已更新')
     request.rows[0].poolKey = pools[2].key
-    expect(buildPriceExport(catalog, request, 'https://docs.gs88.shop').rows[0].model.items[0].coefficient).toBe('0.3')
+    expect(buildPriceExport(catalog, request, 'https://docs.ailink1.com').rows[0].model.items[0].coefficient).toBe('0.3')
     request.rows[0].poolKey = 'removed-pool'
-    expect(() => buildPriceExport(catalog, request, 'https://docs.gs88.shop')).toThrow('价格表已更新')
+    expect(() => buildPriceExport(catalog, request, 'https://docs.ailink1.com')).toThrow('价格表已更新')
   })
 
   it('keeps enabled-but-empty pool configurations empty rather than using unrelated group members', () => {

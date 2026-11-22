@@ -1,4 +1,4 @@
-在 Codex 中安装 imagegen2，使用 LinkAPI 生成图片或编辑参考图。
+在 Codex 中安装 imagegen2，使用 AiLink 生成图片或编辑参考图。
 
 ## 如需技术支持，请添加技术微信，我们将及时响应。
 

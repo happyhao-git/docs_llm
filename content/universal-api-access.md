@@ -9,7 +9,7 @@
 
 ## 1. 获取密钥
 
-打开 [LinkAPI API 密钥](https://ai.ailink1.com/keys)，创建密钥并选择 **一卡通** 或对应平台的余额分组，保存后复制密钥。
+打开 [AiLink 密钥](https://ai.ailink1.com/keys)，创建密钥并选择 **一卡通** 或对应平台的余额分组，保存后复制密钥。
 
 ## 2. 接入 OpenAI 兼容工具
 

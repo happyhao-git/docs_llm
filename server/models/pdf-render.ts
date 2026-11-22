@@ -9,7 +9,7 @@ import type { PriceExportData, PriceExportRow } from './pdf-data.js'
 
 const accent = '#754BF5', ink = '#232137', muted = '#787589', line = '#E8E5EF'
 const asset = (name: string) => fileURLToPath(new URL(`../assets/pdf/${name}`, import.meta.url))
-const logo = existsSync(asset('linkapi.png')) ? asset('linkapi.png') : fileURLToPath(new URL('../../public/icon-192.png', import.meta.url))
+const logo = existsSync(asset('ailink.png')) ? asset('ailink.png') : fileURLToPath(new URL('../../public/icon-192.png', import.meta.url))
 const printer = new PdfPrinter({ Noto: { normal: asset('NotoSansSC-Regular.otf'), bold: asset('NotoSansSC-Bold.otf'),
   italics: asset('NotoSansSC-Regular.otf'), bolditalics: asset('NotoSansSC-Bold.otf') },
   Latin: { normal: 'Helvetica', bold: 'Helvetica-Bold', italics: 'Helvetica-Oblique', bolditalics: 'Helvetica-BoldOblique' } })
@@ -97,10 +97,10 @@ export function priceDocument(data: PriceExportData): TDocumentDefinitions {
   return {
     pageSize: 'A4', pageOrientation: 'landscape', pageMargins: [32, 91, 32, 42],
     defaultStyle: { font: 'Noto', fontSize: 9, color: ink, lineHeight: 1.12 },
-    info: { title: `LinkAPI 模型价格表 · ${data.billing === 'subscription' ? '订阅' : '余额'}`, author: 'LinkAPI', creator: 'LinkAPI', subject: '模型价格表' },
-    watermark: { text: 'LinkAPI', font: 'Latin', color: accent, opacity: 0.055, angle: -25, fontSize: 112, bold: true },
+    info: { title: `AiLink 模型价格表 · ${data.billing === 'subscription' ? '订阅' : '余额'}`, author: 'AiLink', creator: 'AiLink', subject: '模型价格表' },
+    watermark: { text: 'AiLink', font: 'Latin', color: accent, opacity: 0.055, angle: -25, fontSize: 112, bold: true },
     header: () => ({ margin: [32, 23, 32, 0], stack: [
-      { columns: [{ image: logo, width: 27 }, { text: [{ text: 'LinkAPI', font: 'Latin', bold: true, fontSize: 17 }, { text: '  /  模型价格表', fontSize: 12, color: muted }], margin: [9, 1, 0, 0] },
+      { columns: [{ image: logo, width: 27 }, { text: [{ text: 'AiLink', font: 'Latin', bold: true, fontSize: 17 }, { text: '  /  模型价格表', fontSize: 12, color: muted }], margin: [9, 1, 0, 0] },
         { text: `${data.billing === 'subscription' ? '订阅' : '余额'} · ${data.rows.length} 个模型`, alignment: 'right', color: accent, fontSize: 10, margin: [0, 5, 0, 0] }] },
       { text: `价格更新 ${date(data.updatedAt)}  ·  生成 ${date(data.generatedAt)}（北京时间）`, color: muted, fontSize: 7.5, margin: [0, 8, 0, 0] },
       { canvas: [{ type: 'line', x1: 0, y1: 9, x2: 777.89, y2: 9, lineWidth: 0.7, lineColor: line }] }

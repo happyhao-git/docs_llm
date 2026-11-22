@@ -8,4 +8,4 @@ License: SIL Open Font License 1.1; see OFL.txt.
 
 Fonts are embedded as subsets in exported PDFs. They are packaged with the server,
 never downloaded during a page visit or export. The build also copies the current
-LinkAPI icon from public/icon-192.png into the server's PDF assets.
+AiLink icon from public/icon-192.png into the server's PDF assets.

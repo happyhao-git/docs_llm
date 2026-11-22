@@ -1,26 +1,26 @@
-在 TRAE 桌面端接入 LinkAPI，添加自定义模型并完成首次对话。
+在 TRAE 桌面端接入 AiLink，添加自定义模型并完成首次对话。
 
 ::: support 微信技术支持
 
 扫码添加微信，咨询安装与接入问题。点击二维码可放大查看。
 
-![LinkAPI 微信技术支持二维码](/uploads/2026/11/agent-wechat-2882b502fd.webp)
+![AiLink 微信技术支持二维码](/uploads/2026/11/agent-wechat-2882b502fd.webp)
 
 :::
 
 [官方下载](https://www.trae.cn/) · [创建 API Key](https://ai.ailink1.com/keys) · [查看可用模型](https://docs.ailink1.com/models)
 
-## 1. 准备 LinkAPI 密钥
+## 1. 准备 AiLink 密钥
 
 准备好以下两项，再开始配置：
 
-- **API Key**：在 [LinkAPI 控制台](https://ai.ailink1.com/keys)创建并复制密钥，确认对应订阅有效或余额充足。
+- **API Key**：在 [AiLink 控制台](https://ai.ailink1.com/keys)创建并复制密钥，确认对应订阅有效或余额充足。
 - **模型 ID**：必须从[模型广场](https://docs.ailink1.com/models)按自己的订阅分组和账号池获取，步骤如下。
 
 ### 获取自己订阅的模型 ID
 
-1. 打开 [LinkAPI 模型广场](https://docs.ailink1.com/models)，选择 **订阅**。
-2. 在顶部的 **分组** 下拉框中，选择自己已开通、且与 API Key 对应的订阅分组；不要停留在 **全部分组**。不确定订阅名称时，先到 LinkAPI 控制台的 **我的订阅** 中确认。
+1. 打开 [AiLink 模型广场](https://docs.ailink1.com/models)，选择 **订阅**。
+2. 在顶部的 **分组** 下拉框中，选择自己已开通、且与 API Key 对应的订阅分组；不要停留在 **全部分组**。不确定订阅名称时，先到 AiLink 控制台的 **我的订阅** 中确认。
 3. 选择 **模型厂商**；出现 **账号池** 选项时，再选择准备使用的账号池。一卡通订阅也按这个顺序筛选。
 4. 在筛选后的列表中找到目标模型，点击模型 ID 右侧的 **复制图标**。
 5. 返回本教程的模型配置页面，将复制的完整内容粘贴到 **模型 ID**，保留原有大小写和版本后缀。
@@ -31,12 +31,12 @@
 
 ::: details 首次使用：开通订阅与创建密钥
 
-1. 登录 [LinkAPI 控制台](https://ai.ailink1.com)，首次使用先注册账号。
+1. 登录 [AiLink 控制台](https://ai.ailink1.com)，首次使用先注册账号。
 2. 开通所需订阅或充值余额；如有兑换码，在 **兑换** 页面完成兑换，并在 **我的订阅** 中确认订阅状态。
 3. 打开 **API 密钥**，点击 **创建密钥**，填写便于识别的名称，并选择包含目标模型的分组。
 4. 保存后，点击密钥旁的复制按钮，复制完整 API Key。
 
-![在 LinkAPI API 密钥列表中复制密钥](/uploads/2026/11/harness-linkapi-key-2b5fd1624f.webp)
+![在 AiLink 密钥列表中复制密钥](/uploads/2026/11/harness-linkapi-key-2b5fd1624f.webp)
 
 *图中分组为示例，请选择自己已开通、且包含目标模型的分组。*
 
@@ -46,7 +46,7 @@
 
 打开 [TRAE 官网](https://www.trae.cn/)，下载与你的操作系统匹配的桌面版本。安装后启动应用，并按提示完成登录。
 
-## 3. 添加 LinkAPI 自定义模型
+## 3. 添加 AiLink 自定义模型
 
 ### 打开模型设置
 
@@ -73,7 +73,7 @@
 | 完整 URL | **关闭** |
 | 模型 ID | 从[模型广场](https://docs.ailink1.com/models)按自己的订阅分组和账号池复制，所选模型需支持该接口 |
 | 模型展示名称 | 可填写与模型 ID 相同的名称；留空时默认显示模型 ID |
-| API 密钥 | LinkAPI API Key |
+| API 密钥 | AiLink Key |
 
 **自定义请求地址：**
 
@@ -129,7 +129,7 @@ https://ai.ailink1.com/v1
 
 ::: details 提示 401、无效密钥或鉴权失败
 
-重新复制完整 LinkAPI API Key，检查是否漏复制、粘贴了多余空格，或密钥已被停用。确认密钥填在本教程创建的 **自定义模型** 中。
+重新复制完整 AiLink Key，检查是否漏复制、粘贴了多余空格，或密钥已被停用。确认密钥填在本教程创建的 **自定义模型** 中。
 
 :::
 

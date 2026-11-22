@@ -33,4 +33,4 @@ images.forEach((image, index) => {
   offset += image.length
 })
 await writeFile(new URL('favicon.ico', publicDir), Buffer.concat([header, ...images]))
-console.log('Generated LinkAPI icons: ICO (16/32/48), PNG (16/32), Apple (180), app (192/512), maskable (512).')
+console.log('Generated AiLink icons: ICO (16/32/48), PNG (16/32), Apple (180), app (192/512), maskable (512).')

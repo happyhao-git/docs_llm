@@ -1,10 +1,10 @@
-在 ZCode 桌面端接入 LinkAPI，添加自定义模型并完成首次对话。
+在 ZCode 桌面端接入 AiLink，添加自定义模型并完成首次对话。
 
 ::: support 微信技术支持
 
 扫码添加微信，咨询安装与接入问题。点击二维码可放大查看。
 
-![LinkAPI 微信技术支持二维码](/uploads/2026/11/agent-wechat-2882b502fd.webp)
+![AiLink 微信技术支持二维码](/uploads/2026/11/agent-wechat-2882b502fd.webp)
 
 :::
 
@@ -12,7 +12,7 @@
 
 ## 1. 准备密钥与模型 ID
 
-在 [LinkAPI 控制台](https://ai.ailink1.com/keys)创建并复制 API Key，确认对应订阅有效或余额充足。
+在 [AiLink 控制台](https://ai.ailink1.com/keys)创建并复制 API Key，确认对应订阅有效或余额充足。
 
 ### 获取自己订阅的模型 ID
 
@@ -35,15 +35,15 @@
 
 :::
 
-## 3. 添加 LinkAPI 供应商
+## 3. 添加 AiLink 供应商
 
 在 **模型设置 → 自定义供应商** 中点击 **＋ 添加供应商**，按下表填写：
 
 | 配置项 | 填写内容 |
 | --- | --- |
-| 名称 | `LinkAPI` |
+| 名称 | `AiLink` |
 | Base URL | `https://ai.ailink1.com` |
-| API Key | 自己的 LinkAPI API Key |
+| API Key | 自己的 AiLink Key |
 | API 格式 | **Responses (/responses)** |
 
 **Base URL 可直接复制：**
@@ -54,7 +54,7 @@ https://ai.ailink1.com
 
 此处填写站点地址，无需追加 `/v1` 或 `/responses`。
 
-![在 ZCode 中添加 LinkAPI 供应商，填写站点地址和 API Key，并选择 Responses API 格式](/uploads/2026/11/65fdaa75-78cd-47d0-a00d-2a94c8b396f4.png)
+![在 ZCode 中添加 AiLink 供应商，填写站点地址和 API Key，并选择 Responses API 格式](/uploads/2026/11/65fdaa75-78cd-47d0-a00d-2a94c8b396f4.png)
 
 填写连接信息后，继续添加模型。**至少保存一个模型，才能提交供应商。**
 
@@ -84,9 +84,9 @@ https://ai.ailink1.com
 
 1. 点击左上角 **返回工作区**，进入 **新建任务**。
 2. 点击输入框右下角的模型选择器。
-3. 展开 **LinkAPI**，选择刚添加的模型。
+3. 展开 **AiLink**，选择刚添加的模型。
 
-![在 ZCode 模型选择器中展开 LinkAPI，并选择已添加的模型](/uploads/2026/11/8529f0bb-b0ca-46d9-bd42-95ef45ec75b8.png)
+![在 ZCode 模型选择器中展开 AiLink，并选择已添加的模型](/uploads/2026/11/8529f0bb-b0ca-46d9-bd42-95ef45ec75b8.png)
 
 发送以下测试消息：
 
@@ -96,7 +96,7 @@ https://ai.ailink1.com
 
 收到正常回复，且没有鉴权、模型或参数错误，即表示接入完成。
 
-![ZCode 使用 LinkAPI 自定义模型收到正常对话回复](/uploads/2026/11/e8f2473b-fafb-472e-9af0-099a2e7709bb.png)
+![ZCode 使用 AiLink 自定义模型收到正常对话回复](/uploads/2026/11/e8f2473b-fafb-472e-9af0-099a2e7709bb.png)
 
 *图中以发送“hi”为例。右侧的思考强度仅选择模型支持的档位；更换模型或调整参数后，建议新建任务再测试。*
 
@@ -116,7 +116,7 @@ https://ai.ailink1.com
 
 ::: details 提示 401、无效密钥或鉴权失败
 
-重新复制完整的 LinkAPI API Key，检查是否有多余空格、密钥是否停用，以及对应订阅或余额是否可用。确认密钥填写在 **LinkAPI 自定义供应商** 中。
+重新复制完整的 AiLink Key，检查是否有多余空格、密钥是否停用，以及对应订阅或余额是否可用。确认密钥填写在 **AiLink 自定义供应商** 中。
 
 :::
 
@@ -130,7 +130,7 @@ https://ai.ailink1.com
 
 先在供应商的 **模型列表** 中添加至少一个模型，并在模型窗口点击 **保存**；再回到供应商页面点击 **添加供应商**。
 
-回到任务页后，打开模型选择器并展开 **LinkAPI**。如果列表未更新，重新打开选择器或新建任务查看。
+回到任务页后，打开模型选择器并展开 **AiLink**。如果列表未更新，重新打开选择器或新建任务查看。
 
 :::
 

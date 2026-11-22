@@ -1,6 +1,6 @@
 import { expect, test, type APIRequestContext } from '@playwright/test'
 
-test.describe.serial('LinkAPI documentation on disposable database', () => {
+test.describe.serial('AiLink documentation on disposable database', () => {
   let session: APIRequestContext
   let cookies: Awaited<ReturnType<APIRequestContext['storageState']>>['cookies']
 
@@ -130,7 +130,7 @@ test.describe.serial('LinkAPI documentation on disposable database', () => {
     await expect(page.locator('.guide-card-links a')).toHaveCount(6)
     await expect(page.locator('.docs-sidebar')).not.toContainText('管理密钥与 API 用量')
     await expect(page.locator('.docs-sidebar')).not.toContainText('LINKAPI DOCS')
-    await expect(page.locator('.sidebar-intro')).toHaveText('LinkAPI 开发者文档')
+    await expect(page.locator('.sidebar-intro')).toHaveText('AiLink 开发者文档')
     await expect(page.locator('.sidebar-intro')).toHaveAttribute('href', '/')
     await expect(page.locator('.docs-sidebar')).not.toContainText('文档概览')
     await page.evaluate(()=>document.fonts.ready)

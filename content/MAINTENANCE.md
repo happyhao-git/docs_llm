@@ -48,7 +48,7 @@ node scripts/content-sync.mjs import /安全位置/本次导出/manifest.json --
 
 Codex 官方入口当日重定向至 `learn.chatgpt.com/docs/`，本次以实际返回的官方说明核对通用行为。
 
-LinkAPI 的模型名称、分组、图片接口及自定义配置来自已有线上教程和产品配置，并非 OpenAI 或 Anthropic 的服务承诺。客户教程要求以控制台当前可用范围为准。客户文档按原教程截图说明桌面客户端操作。VS Code 插件的图示模型菜单与 CLI 的 `/model` 命令分别说明；`settings.json` 明确归入 Claude Code 插件 / CLI，不与桌面网关配置混用。
+AiLink 的模型名称、分组、图片接口及自定义配置来自已有线上教程和产品配置，并非 OpenAI 或 Anthropic 的服务承诺。客户教程要求以控制台当前可用范围为准。客户文档按原教程截图说明桌面客户端操作。VS Code 插件的图示模型菜单与 CLI 的 `/model` 命令分别说明；`settings.json` 明确归入 Claude Code 插件 / CLI，不与桌面网关配置混用。
 
 ImageGen2 原有完整创建/修复提示词保留不变，正文提供仅安装、不执行图片测试的简短用法。
 

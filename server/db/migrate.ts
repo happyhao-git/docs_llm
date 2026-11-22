@@ -127,7 +127,7 @@ const migrations: Array<{ version: number; statements: string[] }> = [
         CONSTRAINT fk_audit_user FOREIGN KEY (admin_id) REFERENCES admin_users(id)
       ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci`,
       `INSERT INTO site_settings (id, site_name, subtitle, console_url, accent_color)
-       VALUES (1, ${JSON.stringify(process.env.DEFAULT_SITE_NAME ?? 'Link API 文档')}, ${JSON.stringify(process.env.DEFAULT_SITE_SUBTITLE ?? 'AI API 接入与使用指南')}, ${JSON.stringify(process.env.DEFAULT_CONSOLE_URL ?? 'https://ai.gs88.shop')}, ${JSON.stringify(process.env.DEFAULT_ACCENT_COLOR ?? '#6d4aff')})
+       VALUES (1, ${JSON.stringify(process.env.DEFAULT_SITE_NAME ?? 'AiLink 文档')}, ${JSON.stringify(process.env.DEFAULT_SITE_SUBTITLE ?? 'AI API 接入与使用指南')}, ${JSON.stringify(process.env.DEFAULT_CONSOLE_URL ?? 'https://ai.ailink1.com')}, ${JSON.stringify(process.env.DEFAULT_ACCENT_COLOR ?? '#6d4aff')})
        ON DUPLICATE KEY UPDATE id = id`,
       `INSERT INTO site_state (id, active_publication_id) VALUES (1, NULL)
        ON DUPLICATE KEY UPDATE id = id`

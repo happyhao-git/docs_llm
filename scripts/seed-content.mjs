@@ -21,9 +21,9 @@ try {
   const [admins] = await connection.query('SELECT id FROM admin_users ORDER BY id LIMIT 1')
   if (!admins.length) throw new Error('目标内容库没有管理员，请先启动服务完成管理员初始化。')
   const adminId = admins[0].id
-  const siteName = process.env.DEFAULT_SITE_NAME ?? 'Link API 文档'
+  const siteName = process.env.DEFAULT_SITE_NAME ?? 'AiLink 文档'
   const subtitle = process.env.DEFAULT_SITE_SUBTITLE ?? 'AI API 接入与使用指南'
-  const consoleUrl = process.env.DEFAULT_CONSOLE_URL ?? 'https://ai.gs88.shop'
+  const consoleUrl = process.env.DEFAULT_CONSOLE_URL ?? 'https://ai.ailink1.com'
   const accentColor = process.env.DEFAULT_ACCENT_COLOR ?? '#6d4aff'
 
   await connection.beginTransaction()

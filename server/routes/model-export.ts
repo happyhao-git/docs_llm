@@ -31,10 +31,10 @@ export function modelExportRoutes(service: Pick<ModelCatalogService, 'getPublic'
         }
         const { pdf: file, state } = await cache.generate(key, data)
         const day = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date(file.generatedAt)).replaceAll('-', '')
-        const name = `LinkAPI-价格表-${data.billing === 'subscription' ? '订阅' : '余额'}-${day}.pdf`
+        const name = `AiLink-价格表-${data.billing === 'subscription' ? '订阅' : '余额'}-${day}.pdf`
         return reply.type('application/pdf').header('X-Content-Type-Options', 'nosniff')
           .header('X-Price-Pdf-Cache', state).header('Server-Timing', `pdf;dur=${(performance.now() - started).toFixed(1)}`)
-          .header('Content-Disposition', `attachment; filename="LinkAPI-prices-${data.billing}-${day}.pdf"; filename*=UTF-8''${encodeURIComponent(name)}`).send(file.bytes)
+          .header('Content-Disposition', `attachment; filename="AiLink-prices-${data.billing}-${day}.pdf"; filename*=UTF-8''${encodeURIComponent(name)}`).send(file.bytes)
       } catch (error) {
         const status = (error as { statusCode?: number }).statusCode
         if (status === 409) return reply.code(409).send({ code: 'catalog_changed', error: '价格表已更新，请重新导出。' })

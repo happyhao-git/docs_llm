@@ -20,7 +20,7 @@ describe('public price export endpoint', () => {
       const response = await post()
       expect(response.statusCode).toBe(200)
       expect(response.headers['content-type']).toBe('application/pdf')
-      expect(response.headers['content-disposition']).toContain("filename*=UTF-8''LinkAPI-")
+      expect(response.headers['content-disposition']).toContain("filename*=UTF-8''AiLink-")
       expect(response.headers['cache-control']).toBe('no-store')
       expect(pdf.generate.mock.calls[0]?.length).toBe(1)
       for (let i = 0; i < 11; i++) expect((await post()).statusCode).toBe(200)

@@ -1,10 +1,10 @@
-在 OpenCode 中接入 LinkAPI，添加自定义模型并完成首次对话。
+在 OpenCode 中接入 AiLink，添加自定义模型并完成首次对话。
 
 ::: support 微信技术支持
 
 扫码添加微信，咨询安装与接入问题。点击二维码可放大查看。
 
-![LinkAPI 微信技术支持二维码](/uploads/2026/11/agent-wechat-2882b502fd.webp)
+![AiLink 微信技术支持二维码](/uploads/2026/11/agent-wechat-2882b502fd.webp)
 
 :::
 
@@ -12,7 +12,7 @@
 
 ## 1. 准备密钥与模型 ID
 
-在 [LinkAPI 控制台](https://ai.ailink1.com/keys)创建并复制 API Key，确认对应订阅有效或余额充足。
+在 [AiLink 控制台](https://ai.ailink1.com/keys)创建并复制 API Key，确认对应订阅有效或余额充足。
 
 ### 获取自己订阅的模型 ID
 
@@ -63,16 +63,16 @@ opencode debug paths
 
 :::
 
-已有配置文件请先备份，添加 LinkAPI 时保留原有提供商、插件和 MCP 设置。
+已有配置文件请先备份，添加 AiLink 时保留原有提供商、插件和 MCP 设置。
 
-## 3. 添加 LinkAPI 模型
+## 3. 添加 AiLink 模型
 
 新建配置文件时，可复制下方完整内容。已有配置则合并相应字段，不要重复创建 `provider`。
 
 | 配置项 | 填写内容 |
 | --- | --- |
 | `baseURL` | `https://ai.ailink1.com/v1` |
-| `apiKey` | 替换为自己的 LinkAPI API Key |
+| `apiKey` | 替换为自己的 AiLink Key |
 | `id` | 从[模型广场](https://docs.ailink1.com/models)按自己的分组和账号池复制 |
 | `name` | 模型显示名称，建议与 `id` 一致 |
 
@@ -88,7 +88,7 @@ opencode debug paths
   },
   "provider": {
     "myapi": {
-      "name": "LinkAPI",
+      "name": "AiLink",
       "npm": "@ai-sdk/openai-compatible",
       "options": {
         "baseURL": "https://ai.ailink1.com/v1",
@@ -111,7 +111,7 @@ opencode debug paths
 }
 ```
 
-`myapi/coder` 对应默认模型 `gpt-6-astra`。其中 `coder` 是本地别名，**`id` 才是发送给 LinkAPI 的模型 ID**；更换模型时，同步修改对应条目的 `name` 和 `id`。
+`myapi/coder` 对应默认模型 `gpt-6-astra`。其中 `coder` 是本地别名，**`id` 才是发送给 AiLink 的模型 ID**；更换模型时，同步修改对应条目的 `name` 和 `id`。
 
 容量参数沿用示例设置：上下文和输入上限 **400,000 tokens**，输出上限 **32,000 tokens**。更换模型时，请按实际支持的容量调整。
 
@@ -119,7 +119,7 @@ opencode debug paths
 
 ## 4. 验证连接
 
-1. 在桌面端的模型选择器中，选择 **LinkAPI** 下刚添加的模型。终端界面可输入 `/models` 选择。
+1. 在桌面端的模型选择器中，选择 **AiLink** 下刚添加的模型。终端界面可输入 `/models` 选择。
 2. 发送以下消息：
 
 ```text
@@ -180,7 +180,7 @@ opencode run --model myapi/coder "请只回复：连接成功。"
 
 ## 常见问题
 
-::: details 配置保存后，列表中没有 LinkAPI 模型
+::: details 配置保存后，列表中没有 AiLink 模型
 
 确认文件位于正确的配置目录，名称为 `opencode.json`，API Key 已填写。JSON 必须使用英文双引号，检查逗号和括号是否完整。
 

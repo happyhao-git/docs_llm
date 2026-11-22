@@ -10,6 +10,7 @@
     "build:web": "vite build",
     "build:server": "tsc -p tsconfig.server.json && node scripts/copy-pdf-assets.mjs",
     "seed:content": "node scripts/seed-content.mjs",
+    "sync:content": "node scripts/sync-content.mjs",
     "start": "node dist/server/index.js",
     "db:migrate": "tsx server/scripts/migrate.ts",
     "test": "vitest run",

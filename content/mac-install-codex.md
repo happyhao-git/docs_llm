@@ -1,4 +1,4 @@
-在 Mac 或 Linux 上安装 Codex 并连接 LinkAPI，完成配置文件、密钥和 VS Code 插件设置。
+在 Mac 或 Linux 上安装 Codex 并连接 AiLink，完成配置文件、密钥和 VS Code 插件设置。
 
 ## 如需技术支持，请添加技术微信，我们将及时响应。
 
@@ -9,13 +9,13 @@
 
 <!-- anchors: 1-注册平台账号 | 2-兑换订阅 | 获取-api-key | 1-打开密钥页面 | 2-选择订阅分组 | 3-复制密钥 | 1-准备账号与密钥 -->
 
-## 1. 准备LinkAPI账号与密钥
+## 1. 准备AiLink账号与密钥
 
 ### 注册并开通订阅
 
-打开 [LinkAPI 控制台](https://ai.ailink1.com)，使用邮箱注册并登录。
+打开 [AiLink 控制台](https://ai.ailink1.com)，使用邮箱注册并登录。
 
-![LinkAPI 注册页面](/uploads/2026/07/9460a5ae-6967-41d6-a5af-8e6976a048f4.png)
+![AiLink 注册页面](/uploads/2026/07/9460a5ae-6967-41d6-a5af-8e6976a048f4.png)
 
 有兑换码：进入 **兑换** 页面提交，再到 **我的订阅** 确认生效。已开通订阅可跳过兑换。
 
@@ -25,7 +25,7 @@
 
 打开 [API 密钥](https://ai.ailink1.com/keys)，点击 **创建密钥**。
 
-![LinkAPI API 密钥页面](/uploads/2026/07/c8116ed5-721a-4939-8c05-bed8b3757ac4.png)
+![AiLink 密钥页面](/uploads/2026/07/c8116ed5-721a-4939-8c05-bed8b3757ac4.png)
 
 选择订阅对应的 **Codex 分组**，保存后复制完整密钥。
 
@@ -34,7 +34,7 @@
 
 点击密钥旁的复制按钮，复制完整 API Key。
 
-![复制 LinkAPI API Key](/uploads/2026/07/65fc041f-ed8f-43a6-bba4-9ed72378e901.png)
+![复制 AiLink Key](/uploads/2026/07/65fc041f-ed8f-43a6-bba4-9ed72378e901.png)
 
 <!-- anchors: 配置-codexchatgpt | 1-打开终端 | 3-备份并写入配置 | 备份原文件 -->
 
@@ -88,7 +88,7 @@ model_auto_compact_token_limit = 260000
 conversationDetailMode = "STEPS_COMMANDS"
 
 [model_providers.OpenAI]
-name = "LinkAPI"
+name = "AiLink"
 base_url = "https://ai.ailink1.com"
 wire_api = "responses"
 requires_openai_auth = true

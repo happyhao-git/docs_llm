@@ -1,10 +1,10 @@
-在 Qoder 桌面端接入 LinkAPI，添加自定义模型并完成首次对话。
+在 Qoder 桌面端接入 AiLink，添加自定义模型并完成首次对话。
 
 ::: support 微信技术支持
 
 扫码添加微信，咨询安装与接入问题。点击二维码可放大查看。
 
-![LinkAPI 微信技术支持二维码](/uploads/2026/11/agent-wechat-2882b502fd.webp)
+![AiLink 微信技术支持二维码](/uploads/2026/11/agent-wechat-2882b502fd.webp)
 
 :::
 
@@ -12,7 +12,7 @@
 
 ## 1. 准备密钥与模型 ID
 
-在 [LinkAPI 控制台](https://ai.ailink1.com/keys)创建并复制 API Key，确认对应订阅有效或余额充足。
+在 [AiLink 控制台](https://ai.ailink1.com/keys)创建并复制 API Key，确认对应订阅有效或余额充足。
 
 ### 获取自己订阅的模型 ID
 
@@ -37,7 +37,7 @@
 
 :::
 
-## 3. 填写 LinkAPI 连接信息
+## 3. 填写 AiLink 连接信息
 
 在 **添加模型** 窗口中，按下表填写：
 
@@ -46,7 +46,7 @@
 | 供应商 | **OpenAI Compatible** |
 | API 类型 | **Responses API** |
 | 接口地址（Base URL） | `https://ai.ailink1.com/v1` |
-| API Key | 自己的 LinkAPI API Key |
+| API Key | 自己的 AiLink Key |
 | Model ID | 从[模型广场](https://docs.ailink1.com/models)按自己的分组和账号池复制的完整模型 ID |
 
 **接口地址可直接复制：**
@@ -59,7 +59,7 @@ https://ai.ailink1.com/v1
 
 需要添加多个模型时，点击 **＋ 添加 Model ID**，每行填写一个模型 ID。图中以 `gpt-6.1-sol` 和 `gpt-6-astra` 为例；填写完成后点击 **下一步**。
 
-![在 Qoder 模型设置中添加 OpenAI Compatible 供应商，选择 Responses API 并填写 LinkAPI 地址、密钥和模型 ID](/uploads/2026/11/16aaf4ab-1cd8-45e3-a29a-9d0f4fd8cd2a.png)
+![在 Qoder 模型设置中添加 OpenAI Compatible 供应商，选择 Responses API 并填写 AiLink 地址、密钥和模型 ID](/uploads/2026/11/16aaf4ab-1cd8-45e3-a29a-9d0f4fd8cd2a.png)
 
 *同一次添加的模型共用接口地址和 API Key，请确认这些模型都在该密钥的可用范围内。*
 
@@ -123,7 +123,7 @@ https://ai.ailink1.com/v1
 
 ::: details 校验失败，或提示 401、无效密钥
 
-重新复制完整的 LinkAPI API Key，检查是否有多余空格、密钥是否停用，以及对应订阅或余额是否可用。确认接口地址为 `https://ai.ailink1.com/v1`。
+重新复制完整的 AiLink Key，检查是否有多余空格、密钥是否停用，以及对应订阅或余额是否可用。确认接口地址为 `https://ai.ailink1.com/v1`。
 
 :::
 

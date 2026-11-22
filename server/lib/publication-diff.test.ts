@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { comparePublications, documentUpdateTime, type SiteSnapshot } from './publication-diff.js'
 
 const snapshot = (): SiteSnapshot => ({
-  settings: { siteName: 'LinkAPI', subtitle: '文档', consoleUrl: 'https://example.com', accentColor: '#6d4aff' },
+  settings: { siteName: 'AiLink', subtitle: '文档', consoleUrl: 'https://example.com', accentColor: '#6d4aff' },
   groups: [{ id: 1, name: '教程', anchor: 'guides', documents: [
     { id: 1, title: '安装', navLabel: '安装', slug: 'install', markdown: '# 安装' },
     { id: 2, title: '配置', navLabel: '配置', slug: 'config', markdown: '# 配置' }

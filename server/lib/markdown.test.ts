@@ -9,7 +9,7 @@ describe('renderMarkdown', () => {
   })
 
   it('opens regular links in a new tab but keeps anchors local', () => {
-    const result = renderMarkdown('[控制台](https://ai.gs88.shop) [标题](#title)')
+    const result = renderMarkdown('[控制台](https://ai.ailink1.com) [标题](#title)')
     expect(result.html).toContain('target="_blank"')
     expect(result.html).toContain('rel="noopener noreferrer"')
     expect(result.html).toContain('href="#title"')

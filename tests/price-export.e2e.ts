@@ -32,7 +32,7 @@ test('exports the filtered and sorted directory with per-model group choices', a
   expect(request.rows.find((r: { modelId: string }) => r.modelId === 'gpt-image-2.5').groupId).toBe('118')
   expect(request.billing).toBe('balance')
   expect(request.showPlatform).toBe(true)
-  expect(download.suggestedFilename()).toMatch(/^LinkAPI-价格表-余额-\d{8}\.pdf$/)
+  expect(download.suggestedFilename()).toMatch(/^AiLink-价格表-余额-\d{8}\.pdf$/)
   const text = await pdfText(download)
   expect(text).toContain('¥0.03'); expect(text).toContain('¥0.06'); expect(text).toContain('1K'); expect(text).not.toContain('gpt-6.1-terra')
   expect(sourceReads).toBe(0)
@@ -51,7 +51,7 @@ test('reuses the same PDF in a tab and still checks that prices have not changed
   for (let i = 0; i < 2; i++) {
     const downloaded = page.waitForEvent('download')
     await button.click()
-    expect((await downloaded).suggestedFilename()).toMatch(/^LinkAPI-价格表-余额-/)
+    expect((await downloaded).suggestedFilename()).toMatch(/^AiLink-价格表-余额-/)
   }
   await expect.poll(() => responses.length).toBe(2)
   expect(responses[1].status).toBe(204)
@@ -68,7 +68,7 @@ test('downloads a subscription price sheet from a provider view and keeps the co
   const download = await downloaded, text = await pdfText(download)
   expect(ids.length).toBeGreaterThan(5)
   for (const id of ids) expect(text).toContain(id)
-  expect(text).toContain('0.08x'); expect(text).toContain('LinkAPI')
+  expect(text).toContain('0.08x'); expect(text).toContain('AiLink')
   await download.saveAs('/tmp/linkapi-pdf/subscription.pdf')
   await page.screenshot({ path: '/tmp/linkapi-pdf/desktop.png', animations: 'disabled' })
   for (const width of [768, 390]) {
