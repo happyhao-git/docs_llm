@@ -1,0 +1,3 @@
+SHELL=/bin/bash
+PATH=/usr/local/bin:/usr/bin:/bin
+*/5 * * * * ubuntu /usr/bin/flock -n /opt/llm/data/nginx/certs/docs.ailink1.com/.issue.lock /bin/bash /opt/llm/docs_llm/deploy/nginx/issue-docs-cert.sh 2>&1 | /usr/bin/logger -t docs-ailink1-acme
