@@ -1,6 +1,6 @@
 # docs.ailink1.com
 
-144 上 Nginx 容器使用主机网络。`docs.ailink1.com.conf` 处理 HTTP 验证、HTTPS 跳转和到 `127.0.0.1:8090` 的反向代理。
+144 上 Nginx 容器使用主机网络。`docs.ailink1.com.conf` 处理 HTTP 验证、HTTPS 入口和到 `127.0.0.1:8090` 的反向代理。HTTP 入口也直接代理应用，以兼容 Cloudflare Flexible 回源，避免重定向循环；证书签发完成后请将该主机切换到 Full (strict)。
 
 首次安装时，在 `/opt/llm/data/nginx/certs/docs.ailink1.com/` 准备 `fullchain.pem` 和仅 ubuntu 可读的 `privkey.pem`。DNS 尚未开通时可以用仅覆盖该域名的临时自签证书启动。将 `docs.ailink1.com.conf` 和 `ailink-console-csp.conf` 安装到 `/opt/llm/data/nginx/conf.d/`，将 `ailink-console-csp.inc` 安装到其中的 `snippets/`。仅在控制台 `ai.ailink1.com` 的反向代理 location 内加入以下一行。
 
