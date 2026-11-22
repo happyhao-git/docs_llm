@@ -28,6 +28,10 @@ try {
   const [stateRows] = await connection.query('SELECT active_publication_id AS id FROM site_state WHERE id=1 LIMIT 1')
   const publicationId = stateRows[0]?.id
   if (!publicationId) throw new Error('没有活动中的发布版本，停止同步。')
+  await connection.execute(
+    'UPDATE publications SET site_name=?, subtitle=?, console_url=?, accent_color=? WHERE id=?',
+    [siteName, subtitle, consoleUrl, accentColor, publicationId]
+  )
 
   let updated = 0
   for (const item of manifest.documents) {
