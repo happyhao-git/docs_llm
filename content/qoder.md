@@ -4,7 +4,7 @@
 
 扫码添加微信，咨询安装与接入问题。点击二维码可放大查看。
 
-![AiLink 微信技术支持二维码](/uploads/2026/11/agent-wechat-2882b502fd.webp)
+![AiLink 微信技术支持二维码](/uploads/2026/11/agent-wechat-2882b502fd.webp?v=ailink1)
 
 :::
 
@@ -33,7 +33,7 @@
 
 ::: details 查看设置入口
 
-![点击 Qoder 左下角齿轮图标，再选择设置](/uploads/2026/11/20596c41-9f02-48da-9bf9-aefdbd6983f6.png)
+![点击 Qoder 左下角齿轮图标，再选择设置](/uploads/2026/11/20596c41-9f02-48da-9bf9-aefdbd6983f6.png?v=ailink1)
 
 :::
 
@@ -59,7 +59,7 @@ https://ai.ailink1.com/v1
 
 需要添加多个模型时，点击 **＋ 添加 Model ID**，每行填写一个模型 ID。图中以 `gpt-6.1-sol` 和 `gpt-6-astra` 为例；填写完成后点击 **下一步**。
 
-![在 Qoder 模型设置中添加 OpenAI Compatible 供应商，选择 Responses API 并填写 AiLink 地址、密钥和模型 ID](/uploads/2026/11/16aaf4ab-1cd8-45e3-a29a-9d0f4fd8cd2a.png)
+![在 Qoder 模型设置中添加 OpenAI Compatible 供应商，选择 Responses API 并填写 AiLink 地址、密钥和模型 ID](/uploads/2026/11/16aaf4ab-1cd8-45e3-a29a-9d0f4fd8cd2a.png?v=ailink1)
 
 *同一次添加的模型共用接口地址和 API Key，请确认这些模型都在该密钥的可用范围内。*
 
@@ -73,7 +73,7 @@ https://ai.ailink1.com/v1
 - **视觉**：仅在模型支持图片输入时开启。
 - **思考模式 / 思考强度**：仅选择模型支持的能力和档位；不确定时先保留默认设置。
 
-![Qoder 中 gpt-6.1-sol 的显示名称、模型 ID、上下文窗口和能力设置](/uploads/2026/11/316e0601-ac05-4edd-ae50-add0c9e21959.png)
+![Qoder 中 gpt-6.1-sol 的显示名称、模型 ID、上下文窗口和能力设置](/uploads/2026/11/316e0601-ac05-4edd-ae50-add0c9e21959.png?v=ailink1)
 
 *图中的 400K 上下文及思考档位仅作示例，请按所选模型的实际能力设置。*
 
@@ -81,7 +81,7 @@ https://ai.ailink1.com/v1
 
 添加多个模型时，需要分别检查每个模型的能力设置。
 
-![Qoder 中 gpt-6-astra 的模型能力配置示例](/uploads/2026/11/7b5e553a-b956-4c84-bde7-dbf3cb49a4ac.png)
+![Qoder 中 gpt-6-astra 的模型能力配置示例](/uploads/2026/11/7b5e553a-b956-4c84-bde7-dbf3cb49a4ac.png?v=ailink1)
 
 :::
 
@@ -93,7 +93,7 @@ https://ai.ailink1.com/v1
 2. 点击输入框右下角的 **模型名称**。
 3. 切换到 **自定义**，选择刚添加的模型。
 
-![在 Qoder 输入框右下角打开模型选择器，切换到自定义并选择已添加的模型](/uploads/2026/11/774235ba-eecc-40be-9519-a82d9e97e65a.png)
+![在 Qoder 输入框右下角打开模型选择器，切换到自定义并选择已添加的模型](/uploads/2026/11/774235ba-eecc-40be-9519-a82d9e97e65a.png?v=ailink1)
 
 发送以下测试消息：
 
@@ -103,7 +103,7 @@ https://ai.ailink1.com/v1
 
 收到正常回复，且没有鉴权、模型或参数错误，即表示接入完成。
 
-![Qoder 使用自定义模型收到正常对话回复](/uploads/2026/11/b6ea9835-6e69-4eab-8cd1-054978f864fe.png)
+![Qoder 使用自定义模型收到正常对话回复](/uploads/2026/11/b6ea9835-6e69-4eab-8cd1-054978f864fe.png?v=ailink1)
 
 *图中以发送“hi”为例。更换模型或调整参数后，建议新建任务再测试。*
 

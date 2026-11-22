@@ -4,7 +4,7 @@
 
 ::: support 微信技术支持
 
-![技术支持二维码](/uploads/2026/07/2ed7a6b6-27b8-414b-a83b-f41a151df589.jpg)
+![技术支持二维码](/uploads/2026/07/2ed7a6b6-27b8-414b-a83b-f41a151df589.jpg?v=ailink1)
 :::
 
 <!-- anchors: linkapi网站地址 | 技术联系方式 | 安装-codex | 方式一codex-客户端 | 3-打开-codex | 开始前准备 | 2-安装-codex | 桌面客户端 | 打开配置目录并备份 | 修改后如何恢复 -->
@@ -15,25 +15,25 @@
 
 打开 [AiLink 控制台](https://ai.ailink1.com)，使用邮箱注册并登录。
 
-![AiLink 注册页面](/uploads/2026/07/9460a5ae-6967-41d6-a5af-8e6976a048f4.png)
+![AiLink 注册页面](/uploads/2026/07/9460a5ae-6967-41d6-a5af-8e6976a048f4.png?v=ailink1)
 
 有兑换码：进入 **兑换** 页面提交，再到 **我的订阅** 确认生效。已开通订阅可跳过兑换。
 
-![兑换码与我的订阅](/uploads/2026/07/1ac77e33-d056-47fe-99ee-cabff36e8ad6.png)
+![兑换码与我的订阅](/uploads/2026/07/1ac77e33-d056-47fe-99ee-cabff36e8ad6.png?v=ailink1)
 
 ### 创建并复制密钥
 
 打开 [API 密钥](https://ai.ailink1.com/keys)，点击 **创建密钥**。
 
-![AiLink 密钥页面](/uploads/2026/07/c8116ed5-721a-4939-8c05-bed8b3757ac4.png)
+![AiLink 密钥页面](/uploads/2026/07/c8116ed5-721a-4939-8c05-bed8b3757ac4.png?v=ailink1)
 
 选择订阅对应的 **Codex 分组**，保存后复制完整密钥。
 
-![创建密钥](/uploads/2026/11/1f1e9344-c800-41ca-a3b9-4036578c5f73.png)
+![创建密钥](/uploads/2026/11/1f1e9344-c800-41ca-a3b9-4036578c5f73.png?v=ailink1)
 
 点击密钥右侧的 **使用密钥**，查看 Codex 配置。
 
-![打开使用密钥窗口](/uploads/2026/07/46fff324-4e1b-4f5f-8ebf-a43733f7c040.png)
+![打开使用密钥窗口](/uploads/2026/07/46fff324-4e1b-4f5f-8ebf-a43733f7c040.png?v=ailink1)
 
 <!-- anchors: 配置-codex | 1-打开配置目录 -->
 
@@ -41,7 +41,7 @@
 
 打开 [Codex 官方页面](https://openai.com/zh-Hans-CN/codex/) 或 [Microsoft Store](https://apps.microsoft.com/detail/9plm9xgg6vks?hl=zh-CN&gl=CN)，下载并安装 Windows 版本。
 
-![Codex Windows 下载入口](/uploads/2026/07/b836c8e1-c829-4ea1-b954-c5aafdbf8102.png)
+![Codex Windows 下载入口](/uploads/2026/07/b836c8e1-c829-4ea1-b954-c5aafdbf8102.png?v=ailink1)
 
 
 ## 3. 写入配置文件
@@ -50,7 +50,7 @@
 
 按 `Win + E`，在地址栏输入 `%USERPROFILE%\.codex`。目录不存在时，先创建 `.codex` 文件夹。
 
-![Windows 的 .codex 配置目录](/uploads/2026/07/c74c2ecd-e68d-48db-b6a6-0ca19dd95e50.png)
+![Windows 的 .codex 配置目录](/uploads/2026/07/c74c2ecd-e68d-48db-b6a6-0ca19dd95e50.png?v=ailink1)
 
 开启 **查看 → 显示 → 文件扩展名**。已有 `config.toml` 或 `auth.json` 时先备份。
 
@@ -84,7 +84,7 @@ goals = true
 
 另存为时选择 **所有文件**、**UTF-8**，文件名不能带 `.txt`。
 
-![Codex config.toml 配置参考](/uploads/2026/07/73eb8a04-a304-4edb-a633-2c31b1c8f72d.png)
+![Codex config.toml 配置参考](/uploads/2026/07/73eb8a04-a304-4edb-a633-2c31b1c8f72d.png?v=ailink1)
 
 *配置内容以代码为准。*
 
@@ -100,7 +100,7 @@ goals = true
 }
 ```
 
-![Codex auth.json 配置示例](/uploads/2026/07/06fa74fd-b31f-4c46-967f-4c009373dbe1.png)
+![Codex auth.json 配置示例](/uploads/2026/07/06fa74fd-b31f-4c46-967f-4c009373dbe1.png?v=ailink1)
 
 <!-- anchors: 检查并开始使用 | 1-检查两个文件 | 2-重启并验证 | 4-验证并开始使用 -->
 
@@ -114,11 +114,11 @@ goals = true
 
 从 [VS Code 官网](https://code.visualstudio.com/) 安装编辑器。在扩展商店搜索 **Codex**，确认发布者为 **OpenAI** 后安装。
 
-![安装 OpenAI Codex 插件](/uploads/2026/07/de118cae-0467-49a5-98d0-7b47308be787.png)
+![安装 OpenAI Codex 插件](/uploads/2026/07/de118cae-0467-49a5-98d0-7b47308be787.png?v=ailink1)
 
 完成上面的配置后，重启 VS Code，点击 Codex 图标并新建对话。
 
-![VS Code 中的 Codex 面板](/uploads/2026/07/3ce06a3c-aec8-4296-82e9-f65cc50aca25.png)
+![VS Code 中的 Codex 面板](/uploads/2026/07/3ce06a3c-aec8-4296-82e9-f65cc50aca25.png?v=ailink1)
 
 <!-- anchors: 仍然提示登录或找不到密钥 | 对话压缩失败或长对话报错 -->
 

@@ -4,7 +4,7 @@
 
 ::: support 微信技术支持
 
-![技术支持二维码](/uploads/2026/07/2ed7a6b6-27b8-414b-a83b-f41a151df589.jpg)
+![技术支持二维码](/uploads/2026/07/2ed7a6b6-27b8-414b-a83b-f41a151df589.jpg?v=ailink1)
 :::
 
 <!-- anchors: 1-注册平台账号 | 2-兑换订阅 | 获取-api-key | 1-打开密钥页面 | 2-选择订阅分组 | 1-打开使用密钥窗口 | 1-准备账号与密钥 -->
@@ -15,21 +15,21 @@
 
 打开 [AiLink 控制台](https://ai.ailink1.com)，使用邮箱注册并登录。
 
-![AiLink 注册页面](/uploads/2026/07/9460a5ae-6967-41d6-a5af-8e6976a048f4.png)
+![AiLink 注册页面](/uploads/2026/07/9460a5ae-6967-41d6-a5af-8e6976a048f4.png?v=ailink1)
 
 有兑换码：进入 **兑换** 页面提交，再到 **我的订阅** 确认生效。已开通订阅可跳过兑换。
 
-![兑换码与我的订阅](/uploads/2026/07/1ac77e33-d056-47fe-99ee-cabff36e8ad6.png)
+![兑换码与我的订阅](/uploads/2026/07/1ac77e33-d056-47fe-99ee-cabff36e8ad6.png?v=ailink1)
 
 ### 创建并复制密钥
 
 打开 [API 密钥](https://ai.ailink1.com/keys)，点击 **创建密钥**。
 
-![AiLink 密钥页面](/uploads/2026/07/c8116ed5-721a-4939-8c05-bed8b3757ac4.png)
+![AiLink 密钥页面](/uploads/2026/07/c8116ed5-721a-4939-8c05-bed8b3757ac4.png?v=ailink1)
 
 选择订阅对应的 **Claude 分组**，保存后复制完整密钥。
 
-![选择 Claude 密钥分组](/uploads/2026/07/f9f7cd68-802a-4ad1-b8aa-beb9221ab6db.png)
+![选择 Claude 密钥分组](/uploads/2026/07/f9f7cd68-802a-4ad1-b8aa-beb9221ab6db.png?v=ailink1)
 
 <!-- anchors: 开始前准备 | 需要帮助时 | 下载并安装-claude | 提示-401403-或模型不可用 -->
 
@@ -37,7 +37,7 @@
 
 打开 [Claude 官网](https://claude.com/)，点击 **Download desktop app**。选择 macOS 安装包，下载后将 Claude 放入“应用程序”。
 
-![Claude 桌面客户端下载入口](/uploads/2026/07/af369d45-1824-4d00-b937-155d9ecf38a2.png)
+![Claude 桌面客户端下载入口](/uploads/2026/07/af369d45-1824-4d00-b937-155d9ecf38a2.png?v=ailink1)
 
 <!-- anchors: 配置-claude-客户端 | 可选配置桌面客户端 -->
 
@@ -51,7 +51,7 @@
 
 `Help → Troubleshooting → Enable Developer Mode`
 
-![启用 Claude 开发者模式](/uploads/2026/07/4485f6d5-8c41-4fc4-9620-d3ebaac0d7b9.png)
+![启用 Claude 开发者模式](/uploads/2026/07/4485f6d5-8c41-4fc4-9620-d3ebaac0d7b9.png?v=ailink1)
 
 <!-- anchors: 2-打开第三方推理配置 -->
 
@@ -61,7 +61,7 @@
 
 `Developer → Configure Third-Party Inference`
 
-![打开第三方推理配置](/uploads/2026/07/9b58598e-0d9f-4f6a-bda0-035adf3e7139.png)
+![打开第三方推理配置](/uploads/2026/07/9b58598e-0d9f-4f6a-bda0-035adf3e7139.png?v=ailink1)
 
 <!-- anchors: 3-填写连接信息 -->
 
@@ -77,7 +77,7 @@
 | Gateway API key | 你的完整 API Key |
 | Gateway auth scheme | `bearer` |
 
-![Claude 桌面端网关配置](/uploads/2026/07/b0793545-7d9b-4613-9ad1-90bb5dafa293.png)
+![Claude 桌面端网关配置](/uploads/2026/07/b0793545-7d9b-4613-9ad1-90bb5dafa293.png?v=ailink1)
 
 <!-- anchors: 4-检查并开始使用 | 4-验证连接与选择模型 -->
 
@@ -85,7 +85,7 @@
 
 点击 **Test connection**，通过后保存。返回聊天页面，发送一条简单消息；收到回答即配置完成。
 
-![Claude 桌面客户端对话页面](/uploads/2026/07/91950017-e89a-40ae-8430-5df7ebdc35d0.png)
+![Claude 桌面客户端对话页面](/uploads/2026/07/91950017-e89a-40ae-8430-5df7ebdc35d0.png?v=ailink1)
 
 **只使用桌面客户端，到这里即可。**
 
@@ -99,13 +99,13 @@
 
 从 [VS Code 官网](https://code.visualstudio.com/) 安装编辑器。在扩展商店搜索 **Claude Code**，确认发布者为 **Anthropic** 后安装。CLI 用户跳过插件安装。
 
-![安装 Claude Code 官方插件](/uploads/2026/07/9c430636-a626-4cad-9631-1fb5ba826db9.png)
+![安装 Claude Code 官方插件](/uploads/2026/07/9c430636-a626-4cad-9631-1fb5ba826db9.png?v=ailink1)
 
 ### 打开配置参考
 
 在 AiLink 的 **API 密钥** 页面点击 **使用密钥**，选择 **Claude Code → macOS / Linux**。
 
-![Claude Code 的 macOS 配置窗口](/uploads/2026/07/ab0ed915-03ff-433e-8d63-1d54fe67618d.png)
+![Claude Code 的 macOS 配置窗口](/uploads/2026/07/ab0ed915-03ff-433e-8d63-1d54fe67618d.png?v=ailink1)
 
 <!-- anchors: 3-写入-settingsjson | 3-配置-settingsjson | 打开配置目录并备份 | 填入连接信息 -->
 
@@ -139,11 +139,11 @@ EOF
 
 VS Code 插件中，打开命令菜单并选择 **Switch model**。图示入口为 `/switch`：
 
-![Claude Code 的 Switch model 入口](/uploads/2026/07/108445fe-e32c-4bfc-b75c-b0e6152a67c0.png)
+![Claude Code 的 Switch model 入口](/uploads/2026/07/108445fe-e32c-4bfc-b75c-b0e6152a67c0.png?v=ailink1)
 
 选择当前订阅支持的模型：
 
-![Claude Code 模型选择列表](/uploads/2026/07/95c44718-2e9f-402d-aa30-91e1c8d46196.png)
+![Claude Code 模型选择列表](/uploads/2026/07/95c44718-2e9f-402d-aa30-91e1c8d46196.png?v=ailink1)
 
 CLI 输入 `/model` 切换模型。
 

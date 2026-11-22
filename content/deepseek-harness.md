@@ -6,7 +6,7 @@
 
 扫码添加微信，咨询安装与接入问题。点击二维码可放大查看。
 
-![AiLink 微信技术支持二维码](/uploads/2026/11/agent-wechat-2882b502fd.webp)
+![AiLink 微信技术支持二维码](/uploads/2026/11/agent-wechat-2882b502fd.webp?v=ailink1)
 
 :::
 
@@ -40,7 +40,7 @@
 3. 打开 **API 密钥**，点击 **创建密钥**，填写便于识别的名称，并选择包含目标模型的分组。
 4. 保存后，点击密钥旁的复制按钮，复制完整 API Key。
 
-![在 AiLink 密钥列表中复制密钥](/uploads/2026/11/harness-linkapi-key-2b5fd1624f.webp)
+![在 AiLink 密钥列表中复制密钥](/uploads/2026/11/harness-linkapi-key-2b5fd1624f.webp?v=ailink1)
 
 *图中分组为示例，请选择自己已开通、且包含目标模型的分组。*
 
@@ -52,7 +52,7 @@
 
 打开 [DeepSeek Harness 官方下载页](https://www.deepseek.com/harness/)，选择对应系统的安装包：**Windows（64 位）** 或 **macOS（Apple 芯片）**。安装完成后启动应用。
 
-![DeepSeek Harness 官方下载页与系统选择](/uploads/2026/11/harness-download-e4cc922a65.webp)
+![DeepSeek Harness 官方下载页与系统选择](/uploads/2026/11/harness-download-e4cc922a65.webp?v=ailink1)
 
 *在下载菜单中选择与你的电脑匹配的版本。*
 
@@ -66,11 +66,11 @@
 
 ::: details 查看“更多 → 设置”的位置
 
-![DeepSeek Harness 左下角的更多菜单与设置入口](/uploads/2026/11/harness-settings-dae9dfb8be.webp)
+![DeepSeek Harness 左下角的更多菜单与设置入口](/uploads/2026/11/harness-settings-dae9dfb8be.webp?v=ailink1)
 
 :::
 
-![在模型设置中添加模型供应商](/uploads/2026/11/harness-add-provider-748cb260f9.webp)
+![在模型设置中添加模型供应商](/uploads/2026/11/harness-add-provider-748cb260f9.webp?v=ailink1)
 
 ### 填写连接信息
 
@@ -93,7 +93,7 @@ https://ai.ailink1.com/v1
 这里只填写以 `/v1` 结尾的基础地址，无需追加 `/response`。
 
 
-![配置页面](/uploads/2026/11/a25ab271-0138-4eef-b886-b5f4f752a19c.png)
+![配置页面](/uploads/2026/11/a25ab271-0138-4eef-b886-b5f4f752a19c.png?v=ailink1)
 
 
 *已保存的密钥会显示为占位提示，不会再次明文展示。*
@@ -115,7 +115,7 @@ https://ai.ailink1.com/v1
 - **输入类型**：保留 **文本**；只有支持图片输入的模型才勾选 **图片**。
 - **推理等级**：仅为支持推理档位的模型开启，并添加接口支持的档位。
 
-![模型选项中的上下文窗口、最大输出、图片输入与推理等级](/uploads/2026/11/harness-model-options-b9d6be4e04.webp)
+![模型选项中的上下文窗口、最大输出、图片输入与推理等级](/uploads/2026/11/harness-model-options-b9d6be4e04.webp?v=ailink1)
 
 *图中容量数值与推理档位仅作界面示例，请按所选模型填写。*
 
@@ -140,7 +140,7 @@ https://ai.ailink1.com/v1
 
 收到正常回复，且没有鉴权、模型或参数错误，即表示接入完成。
 
-![选择已配置模型后，在 DeepSeek Harness 中收到正常回复](/uploads/2026/11/harness-chat-16480e42db.webp)
+![选择已配置模型后，在 DeepSeek Harness 中收到正常回复](/uploads/2026/11/harness-chat-16480e42db.webp?v=ailink1)
 
 *模型在输入框右下角切换。更换模型或调整参数后，建议新建会话再测试。*
 

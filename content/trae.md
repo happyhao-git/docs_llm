@@ -4,7 +4,7 @@
 
 扫码添加微信，咨询安装与接入问题。点击二维码可放大查看。
 
-![AiLink 微信技术支持二维码](/uploads/2026/11/agent-wechat-2882b502fd.webp)
+![AiLink 微信技术支持二维码](/uploads/2026/11/agent-wechat-2882b502fd.webp?v=ailink1)
 
 :::
 
@@ -36,7 +36,7 @@
 3. 打开 **API 密钥**，点击 **创建密钥**，填写便于识别的名称，并选择包含目标模型的分组。
 4. 保存后，点击密钥旁的复制按钮，复制完整 API Key。
 
-![在 AiLink 密钥列表中复制密钥](/uploads/2026/11/harness-linkapi-key-2b5fd1624f.webp)
+![在 AiLink 密钥列表中复制密钥](/uploads/2026/11/harness-linkapi-key-2b5fd1624f.webp?v=ailink1)
 
 *图中分组为示例，请选择自己已开通、且包含目标模型的分组。*
 
@@ -52,15 +52,15 @@
 
 点击 TRAE 窗口右上角的 **设置** 图标。
 
-![TRAE 窗口右上角的设置入口](/uploads/2026/11/trae-settings-6525b8c977.webp)
+![TRAE 窗口右上角的设置入口](/uploads/2026/11/trae-settings-6525b8c977.webp?v=ailink1)
 
 在设置左侧选择 **模型**，再点击 **＋添加模型**。
 
-![在 TRAE 设置中选择模型并点击添加模型](/uploads/2026/11/trae-model-settings-829128128a.webp)
+![在 TRAE 设置中选择模型并点击添加模型](/uploads/2026/11/trae-model-settings-829128128a.webp?v=ailink1)
 
 在弹出的窗口中选择 **自定义模型**。
 
-![TRAE 添加模型窗口中的自定义模型入口](/uploads/2026/11/trae-custom-model-a4195bad65.webp)
+![TRAE 添加模型窗口中的自定义模型入口](/uploads/2026/11/trae-custom-model-a4195bad65.webp?v=ailink1)
 
 ### 填写连接信息
 
@@ -83,7 +83,7 @@ https://ai.ailink1.com/v1
 
 保持 **完整 URL** 关闭，地址末尾不要再加 `/`。TRAE 会自动补充 `/responses`，这里无需手动追加。
 
-![TRAE 自定义模型的 API 格式、请求地址、模型 ID 与密钥配置](/uploads/2026/11/trae-connection-7f4a5849a1.webp)
+![TRAE 自定义模型的 API 格式、请求地址、模型 ID 与密钥配置](/uploads/2026/11/trae-connection-7f4a5849a1.webp?v=ailink1)
 
 *模型 ID 须与密钥对应分组中的 ID 完全一致。模型展示名称只用于列表显示，不会改变实际调用的模型。*
 
@@ -101,7 +101,7 @@ https://ai.ailink1.com/v1
 | 思考模式：参数名 | 本教程的 Responses 接口使用 `reasoning.effort` |
 | 思考模式：可选值列表 | 仅添加所选模型支持的推理档位；不确定时保留默认设置 |
 
-![TRAE 高级配置中的模型系列、输入输出上限、图片输入与思考模式](/uploads/2026/11/trae-model-options-d10a89f836.webp)
+![TRAE 高级配置中的模型系列、输入输出上限、图片输入与思考模式](/uploads/2026/11/trae-model-options-d10a89f836.webp?v=ailink1)
 
 *图中输入 `262144`、输出 `131072`、工具调用轮数 `500`，以及 `high`、`xhigh`、`max` 档位均为配置示例，请按所选模型填写。*
 
@@ -121,7 +121,7 @@ https://ai.ailink1.com/v1
 
 收到正常回复，且没有鉴权、模型或参数错误，即表示接入完成。
 
-![在 TRAE 对话中选择 gpt-6.1-sol 并收到正常回复](/uploads/2026/11/trae-chat-e1ef670094.webp)
+![在 TRAE 对话中选择 gpt-6.1-sol 并收到正常回复](/uploads/2026/11/trae-chat-e1ef670094.webp?v=ailink1)
 
 *更换模型或调整参数后，建议新建对话再测试。需要读写项目文件时，先打开对应的本地项目文件夹。*
 

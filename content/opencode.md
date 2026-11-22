@@ -4,7 +4,7 @@
 
 扫码添加微信，咨询安装与接入问题。点击二维码可放大查看。
 
-![AiLink 微信技术支持二维码](/uploads/2026/11/agent-wechat-2882b502fd.webp)
+![AiLink 微信技术支持二维码](/uploads/2026/11/agent-wechat-2882b502fd.webp?v=ailink1)
 
 :::
 

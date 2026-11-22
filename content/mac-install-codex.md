@@ -4,7 +4,7 @@
 
 ::: support 微信技术支持
 
-![技术支持二维码](/uploads/2026/07/2ed7a6b6-27b8-414b-a83b-f41a151df589.jpg)
+![技术支持二维码](/uploads/2026/07/2ed7a6b6-27b8-414b-a83b-f41a151df589.jpg?v=ailink1)
 :::
 
 <!-- anchors: 1-注册平台账号 | 2-兑换订阅 | 获取-api-key | 1-打开密钥页面 | 2-选择订阅分组 | 3-复制密钥 | 1-准备账号与密钥 -->
@@ -15,26 +15,26 @@
 
 打开 [AiLink 控制台](https://ai.ailink1.com)，使用邮箱注册并登录。
 
-![AiLink 注册页面](/uploads/2026/07/9460a5ae-6967-41d6-a5af-8e6976a048f4.png)
+![AiLink 注册页面](/uploads/2026/07/9460a5ae-6967-41d6-a5af-8e6976a048f4.png?v=ailink1)
 
 有兑换码：进入 **兑换** 页面提交，再到 **我的订阅** 确认生效。已开通订阅可跳过兑换。
 
-![兑换码与我的订阅](/uploads/2026/07/1ac77e33-d056-47fe-99ee-cabff36e8ad6.png)
+![兑换码与我的订阅](/uploads/2026/07/1ac77e33-d056-47fe-99ee-cabff36e8ad6.png?v=ailink1)
 
 ### 创建并复制密钥
 
 打开 [API 密钥](https://ai.ailink1.com/keys)，点击 **创建密钥**。
 
-![AiLink 密钥页面](/uploads/2026/07/c8116ed5-721a-4939-8c05-bed8b3757ac4.png)
+![AiLink 密钥页面](/uploads/2026/07/c8116ed5-721a-4939-8c05-bed8b3757ac4.png?v=ailink1)
 
 选择订阅对应的 **Codex 分组**，保存后复制完整密钥。
 
-![创建密钥](/uploads/2026/11/1f1e9344-c800-41ca-a3b9-4036578c5f73.png)
+![创建密钥](/uploads/2026/11/1f1e9344-c800-41ca-a3b9-4036578c5f73.png?v=ailink1)
 
 
 点击密钥旁的复制按钮，复制完整 API Key。
 
-![复制 AiLink Key](/uploads/2026/07/65fc041f-ed8f-43a6-bba4-9ed72378e901.png)
+![复制 AiLink Key](/uploads/2026/07/65fc041f-ed8f-43a6-bba4-9ed72378e901.png?v=ailink1)
 
 <!-- anchors: 配置-codexchatgpt | 1-打开终端 | 3-备份并写入配置 | 备份原文件 -->
 
@@ -98,9 +98,9 @@ goals = true
 EOF
 ```
 
-![Mac Codex config.toml 配置结果](/uploads/2026/07/98d8cf44-f450-43ae-b6b7-edbaf1eab968.png)
+![Mac Codex config.toml 配置结果](/uploads/2026/07/98d8cf44-f450-43ae-b6b7-edbaf1eab968.png?v=ailink1)
 
-![Codex 配置字段参考](/uploads/2026/07/73eb8a04-a304-4edb-a633-2c31b1c8f72d.png)
+![Codex 配置字段参考](/uploads/2026/07/73eb8a04-a304-4edb-a633-2c31b1c8f72d.png?v=ailink1)
 
 *配置内容以代码为准。*
 

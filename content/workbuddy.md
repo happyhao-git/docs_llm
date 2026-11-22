@@ -6,7 +6,7 @@
 
 扫码添加微信，咨询安装与接入问题。点击二维码可放大查看。
 
-![AiLink 微信技术支持二维码](/uploads/2026/11/agent-wechat-2882b502fd.webp)
+![AiLink 微信技术支持二维码](/uploads/2026/11/agent-wechat-2882b502fd.webp?v=ailink1)
 
 :::
 
@@ -40,7 +40,7 @@
 3. 打开 **API 密钥**，点击 **创建密钥**，填写便于识别的名称，并选择包含目标模型的分组。
 4. 保存后，点击密钥旁的复制按钮，复制完整 API Key。
 
-![在 AiLink 密钥列表中复制密钥](/uploads/2026/11/harness-linkapi-key-2b5fd1624f.webp)
+![在 AiLink 密钥列表中复制密钥](/uploads/2026/11/harness-linkapi-key-2b5fd1624f.webp?v=ailink1)
 
 *图中分组为示例，请选择自己已开通、且包含目标模型的分组。*
 
@@ -52,7 +52,7 @@
 
 打开 [WorkBuddy 官方下载页](https://www.workbuddy.cn/)，选择与你的操作系统匹配的桌面版本，安装后启动应用。
 
-![WorkBuddy 官方下载页与系统选择](/uploads/2026/11/workbuddy-download-a8e1e44600.webp)
+![WorkBuddy 官方下载页与系统选择](/uploads/2026/11/workbuddy-download-a8e1e44600.webp?v=ailink1)
 
 *在下载菜单中选择与你的电脑匹配的版本。*
 
@@ -66,7 +66,7 @@
 
 ::: details 查看自定义模型的入口
 
-![WorkBuddy 模型选择器中的配置自定义模型入口](/uploads/2026/11/workbuddy-model-menu-beb06cd4e4.webp)
+![WorkBuddy 模型选择器中的配置自定义模型入口](/uploads/2026/11/workbuddy-model-menu-beb06cd4e4.webp?v=ailink1)
 
 :::
 
@@ -86,7 +86,7 @@
 https://ai.ailink1.com/v1/chat/completions
 ```
 
-![WorkBuddy 自定义模型的接口地址、API Key 与模型名称](/uploads/2026/11/workbuddy-model-form-b47d2d59e2.webp)
+![WorkBuddy 自定义模型的接口地址、API Key 与模型名称](/uploads/2026/11/workbuddy-model-form-b47d2d59e2.webp?v=ailink1)
 
 *图中模型仅作填写示例。实际模型名称须与密钥对应分组中的 ID 完全一致。*
 
@@ -100,7 +100,7 @@ https://ai.ailink1.com/v1/chat/completions
 - **输入 / 输出**：填写模型支持的上下文与最大输出上限，单位为 token。
 - **自定义协议**：使用本教程的标准接口地址时，保持关闭。
 
-![WorkBuddy 的工具调用、图片输入、思考模式及输入输出参数](/uploads/2026/11/workbuddy-model-options-9a7ff893bb.webp)
+![WorkBuddy 的工具调用、图片输入、思考模式及输入输出参数](/uploads/2026/11/workbuddy-model-options-9a7ff893bb.webp?v=ailink1)
 
 *图中能力开关、思考档位与容量数值仅作界面示例，请按所选模型填写。*
 
@@ -154,11 +154,11 @@ https://ai.ailink1.com/v1/chat/completions
 
 ::: details 查看“测试连接”成功的提示
 
-![WorkBuddy 测试连接成功后保存模型设置](/uploads/2026/11/workbuddy-connection-test-f5d5b3379d.webp)
+![WorkBuddy 测试连接成功后保存模型设置](/uploads/2026/11/workbuddy-connection-test-f5d5b3379d.webp?v=ailink1)
 
 :::
 
-![在 WorkBuddy 任务中使用已配置模型并收到正常回复](/uploads/2026/11/workbuddy-chat-aae52ac8f4.webp)
+![在 WorkBuddy 任务中使用已配置模型并收到正常回复](/uploads/2026/11/workbuddy-chat-aae52ac8f4.webp?v=ailink1)
 
 *更换模型或调整参数后，建议新建任务再测试。*
 

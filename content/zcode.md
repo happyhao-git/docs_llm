@@ -4,7 +4,7 @@
 
 扫码添加微信，咨询安装与接入问题。点击二维码可放大查看。
 
-![AiLink 微信技术支持二维码](/uploads/2026/11/agent-wechat-2882b502fd.webp)
+![AiLink 微信技术支持二维码](/uploads/2026/11/agent-wechat-2882b502fd.webp?v=ailink1)
 
 :::
 
@@ -31,7 +31,7 @@
 
 ::: details 查看“管理模型”的位置
 
-![在 ZCode 新建任务页面的输入框右下角打开管理模型](/uploads/2026/11/8c2ed0a7-c974-4b95-bded-e838336a8dfc.png)
+![在 ZCode 新建任务页面的输入框右下角打开管理模型](/uploads/2026/11/8c2ed0a7-c974-4b95-bded-e838336a8dfc.png?v=ailink1)
 
 :::
 
@@ -54,7 +54,7 @@ https://ai.ailink1.com
 
 此处填写站点地址，无需追加 `/v1` 或 `/responses`。
 
-![在 ZCode 中添加 AiLink 供应商，填写站点地址和 API Key，并选择 Responses API 格式](/uploads/2026/11/65fdaa75-78cd-47d0-a00d-2a94c8b396f4.png)
+![在 ZCode 中添加 AiLink 供应商，填写站点地址和 API Key，并选择 Responses API 格式](/uploads/2026/11/65fdaa75-78cd-47d0-a00d-2a94c8b396f4.png?v=ailink1)
 
 填写连接信息后，继续添加模型。**至少保存一个模型，才能提交供应商。**
 
@@ -70,7 +70,7 @@ https://ai.ailink1.com
 - **输入类型**：保留 **文本**；仅在模型支持时勾选 **图片**、**视频** 或 **PDF**。
 - **输出类型**：本教程的文本对话模型保留 **文本**。
 
-![ZCode 模型配置中的模型 ID、上下文窗口、最大输出 Token 和输入输出类型](/uploads/2026/11/9022ac7b-902d-4d7e-b519-2571a8f861f0.png)
+![ZCode 模型配置中的模型 ID、上下文窗口、最大输出 Token 和输入输出类型](/uploads/2026/11/9022ac7b-902d-4d7e-b519-2571a8f861f0.png?v=ailink1)
 
 *图中的 270,000 上下文和 128,000 最大输出仅作填写示例，请按所选模型实际支持的容量设置。*
 
@@ -86,7 +86,7 @@ https://ai.ailink1.com
 2. 点击输入框右下角的模型选择器。
 3. 展开 **AiLink**，选择刚添加的模型。
 
-![在 ZCode 模型选择器中展开 AiLink，并选择已添加的模型](/uploads/2026/11/8529f0bb-b0ca-46d9-bd42-95ef45ec75b8.png)
+![在 ZCode 模型选择器中展开 AiLink，并选择已添加的模型](/uploads/2026/11/8529f0bb-b0ca-46d9-bd42-95ef45ec75b8.png?v=ailink1)
 
 发送以下测试消息：
 
@@ -96,7 +96,7 @@ https://ai.ailink1.com
 
 收到正常回复，且没有鉴权、模型或参数错误，即表示接入完成。
 
-![ZCode 使用 AiLink 自定义模型收到正常对话回复](/uploads/2026/11/e8f2473b-fafb-472e-9af0-099a2e7709bb.png)
+![ZCode 使用 AiLink 自定义模型收到正常对话回复](/uploads/2026/11/e8f2473b-fafb-472e-9af0-099a2e7709bb.png?v=ailink1)
 
 *图中以发送“hi”为例。右侧的思考强度仅选择模型支持的档位；更换模型或调整参数后，建议新建任务再测试。*
 
